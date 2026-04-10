@@ -79,8 +79,8 @@ guille <- rename(guille, q2.5 = X2.5., q50 = X50., q97.5 = X97.5.)
 
 guille$year <- seq(1995, 2020, 1)
 
-cov <- read.csv("standardised_covariates_for_models_1995-2020.csv")
-cov2 <- read.csv("covariates_for_models_1995-2020.csv")
+cov <- read.csv("data/standardised_covariates_for_models_1995-2020.csv")
+cov2 <- read.csv("data/covariates_for_models_1995-2020.csv")
 
 # add covariates 
 guille$apc1 <- cov$son_pc1   # autumn storms

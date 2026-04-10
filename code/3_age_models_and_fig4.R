@@ -13,7 +13,7 @@ library(dplyr)
 library(nimble)
 
 ####  data  ####
-amos <- read.csv("reduced_guille_eh.csv")
+amos <- read.csv("data/reduced_guillmot_multistate_1995-2021.csv")
 
 y <- amos %>%
   as.matrix()
@@ -2652,7 +2652,7 @@ pnb <- as.data.frame(MCMCsummary(mcmc.ms.agev8.constant3$samples, round = 3, par
 pb <- as.data.frame(MCMCsummary(mcmc.ms.agev8.constant3$samples, round = 3, params = "p.B")) 
 
 # guillemot population
-pop <- read.csv("covariates_for_models_1995-2020.csv")
+pop <- read.csv("data/covariates_for_models_1995-2020.csv")
 pop <- pop %>% select(1,9)
 
 ### juveniles

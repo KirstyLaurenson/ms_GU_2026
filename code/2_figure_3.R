@@ -5,7 +5,7 @@ library(scales)
 library(cowplot)
 
 #### read data  ####
-dat <- read.csv("firstbreedetc_reduced.csv") 
+dat <- read.csv("data/firstbreedetc_reduced.csv") 
 
 # table includes ringing occasion, occasion an individual was first seen at the colony, 
 # the occasion an individual first bred at the colony, and the age at return and first breeding

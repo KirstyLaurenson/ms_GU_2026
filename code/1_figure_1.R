@@ -7,9 +7,9 @@ library(cowplot)   # better functionality for saving plots
 library(magick)
 
 # read data
-shp <- st_read("data/landhi_wgs84.shp") # shapefile 
-gls <- read.csv("guille_gls_overall_mcp.csv") # gls mcp
-rr <- read.csv("guille_rrw_overall_mcp.csv") # ring recovery MCP
+shp <- st_read("data/shapefile/landhi_wgs84.shp") # shapefile 
+gls <- read.csv("data/guille_gls_overall_mcp.csv") # gls mcp
+rr <- read.csv("data/guille_rrw_overall_mcp.csv") # ring recovery MCP
 
 # star coords (location of Skomer)
 slat <- 51.74

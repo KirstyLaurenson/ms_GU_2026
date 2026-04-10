@@ -24,14 +24,14 @@ library(dplyr)
 library(nimble)
 
 ####  data  ####
-amos <- read.csv("reduced_guille_eh.csv")
+amos <- read.csv("data/reduced_guillemot_multistate_1995-2021.csv")
 y <- amos %>%
   as.matrix()
 
 head(y)
 tail(y)
 
-df <- read.csv("reduced_model_cov2.csv")
+df <- read.csv("standardised_covariates_for_models_1995-2020.csv")
 
 ####  estimate impact of single covariate on age 6 recruitment  ####
 
